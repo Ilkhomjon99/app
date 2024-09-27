@@ -1,0 +1,273 @@
+section {
+
+   padding: 0  calc(24px + (121 - 24) * ((110vw - 375px) / (1280 - 375)));
+   margin-bottom: calc(60px + (160 - 60) * ((110vw - 375px) / (1280 - 375)));
+   align-items: center;
+}
+
+h2 {
+   
+   
+   font-size: calc(34px + (58 - 34) * ((110vw - 375px) / (1280 - 375)));
+   font-weight: 500;
+   margin-bottom: calc(40px + (90 - 40)* ((100vw - 375px) / (1280 -375)));
+   
+   text-transform: uppercase;
+   line-height: 117%;
+}
+
+
+.infoContainer {
+   display: flex;
+   gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
+   flex-wrap: wrap;
+} 
+
+   
+    
+
+ 
+
+ .infoCard {
+    flex-basis: 250px;
+    flex-grow: 1;
+ }
+.infoCard img {
+   width: 100%;
+}
+ 
+ 
+
+ .infoBox {
+    flex-basis: 300px;
+    flex-grow: 3;
+ }
+
+ h4 {
+    font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 120%;
+ }
+
+ .infoBox p {
+   font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+   line-height: 140%;
+   
+ }
+
+ .legendSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+    column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+ }
+
+ 
+ .skill img {
+    width: 36px;
+ }
+
+ .skill span {
+    display: block;
+    margin-top: 10px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+ }
+
+ 
+
+
+.Diplom {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   gap: 20px;
+   
+}
+   
+   
+.Diplom span {
+   font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+}
+   
+.Diplom img {
+  
+grid-row: 1/3;
+align-self: center;
+max-width: 300px;
+
+
+}
+   
+
+.Diplom h3 {
+  margin-bottom: 0;
+  font-size: calc(34px + (58 - 34) * ((110vw - 375px) / (1280 - 375)));
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  
+
+}
+
+
+ 
+   
+
+@media (max-width: 600px) {
+   .Diplom {
+      grid-template-columns: 1fr;
+   }
+   .Diplom img {
+      grid-row: 2/3;
+      width: 100%;
+   }
+}
+  
+   
+   
+   
+
+
+   
+   
+
+   
+
+
+.frameBox {
+   border: 2px solid black;
+   padding:calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375))) calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375))) calc(23px + (35 - 25) * ((100vw - 375px) / (1280 - 375)));
+   position: relative;
+
+}
+
+
+#corner {
+   position: absolute;
+    width: calc(40px + (140 - 40) * ((100vw - 375px) / (1280 - 375)));
+   top: -2px;
+   right: -2px;
+}
+
+
+
+.frameBox h3 {
+   margin: 0;
+}
+
+.lessons {
+   margin-top: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+   margin-bottom: calc(23px + (34 - 23) * ((100vw - 375px) / (1280 - 375)));
+   list-style-type: none;
+}
+
+.lessons li {
+   border-bottom: 1px solid #a1a1a1;
+   padding: 24px 0;
+   font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+
+}
+
+.lessons li:first-child {
+   padding-top: 0;
+}
+
+.frame button {
+   display: block;
+   margin: 0 auto;
+   
+      width: 328px;
+      padding: 20px 0px;
+      border-radius: 12px ;
+  
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 117%;
+  
+      background: #6E3ABA;
+      color: white;
+      border: 1px solid  #6E3ABA;
+   }
+  
+  
+ 
+  
+
+.mobile {
+   display: none !important;
+}
+
+@media (max-width: 600px) {
+   .mobile {
+      display: block !important;
+   }
+
+   .desktop {
+      display: none !important;
+   }
+
+   .frame button {
+      margin-top: 30px;
+   }
+
+   .lessons li:last-child {
+      border: 0;
+      padding-bottom: 0;
+   }
+}
+
+
+
+
+h3 {
+   font-size: calc(34px + (58 - 34) * ((110vw - 375px) / (1280 - 375)));
+   font-weight: 500;
+   margin-bottom: calc(40px + (90 - 40)* ((100vw - 375px) / (1280 -375)));
+   line-height: 117%;
+   
+}
+
+ p {
+   font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.money img {
+   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .money img {
+   width: 328px;
+   height: 96px;
+   top: 350px;
+}
+
+}
+
+
+
+
+
+.presentBox {
+   display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.presentBox img {
+   grid-row: 1/3;
+}
+
+ p {
+   font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+@media ( max-width: 600px) {
+    .presentBox {
+      grid-template-columns: 2fr;
+    }
+    .presentBox {
+      grid-row: 2/2;
+    }
+}
