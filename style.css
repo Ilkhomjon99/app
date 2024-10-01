@@ -281,12 +281,12 @@ max-width: 300px;
    .otziviprof img {
       border-radius: 50px;
   }
-  .user1, .user2, .user3, img {
-      margin-left: 20px;
-  }
+  /*.user1, .user2, .user3, img {
+      margin-left: 5px;
+  }*/
   .fio {
       margin-left: 16px;
-      width: 169px;
+      
       height: 56px;
       display: flex;
       flex-wrap: wrap;
@@ -299,7 +299,7 @@ max-width: 300px;
       font-family: 'TT Hoves';
       font-size: 21px;
       font-weight: 400;
-      line-height: 29.4px;
+      line-height: 140%;
   }
   .otzivi {
       display: flex;
@@ -310,31 +310,34 @@ max-width: 300px;
       
   }
   .otziv h2 {
-      width: calc(328px + (828 - 328) * ((100vw - 376px) / (1280 - 375)));
+      
       height: calc(80px + (68 - 80) * ((100vw - 376px) / (1280 - 375)));
   }
   .user1 {
       width: calc(328px + (335 - 328) * ((100vw - 376px) / (1280 - 375)));
       height: calc(484px + (484 - 484) * ((100vw - 376px) / (1280 - 375)));
-      flex-direction: column;
+      
       background-color: #F0F7FD;
-      margin-right: 30px;
+      margin-right: 5px;
       border-radius: 12px;
+      margin-top: 10px;
   }
   .user2 {
       width: calc(328px + (335 - 328) * ((100vw - 376px) / (1280 - 375)));
       height: calc(484px + (484 - 484) * ((100vw - 376px) / (1280 - 375)));
-      flex-direction: column;
+      
       background-color: #F0F7FD;
-      margin-right: 30px;
+      margin-right: 5px;
       border-radius: 12px;
+      margin-top: 10PX;
   }
   .user3 {
       width: calc(328px + (335 - 328) * ((100vw - 376px) / (1280 - 375)));
       height: calc(484px + (484 - 484) * ((100vw - 376px) / (1280 - 375)));
-      flex-direction: column;
+      
       background-color: #F0F7FD;
       border-radius: 12px;
+      margin-top: 10px;
   }
   .user1 p {
       margin-left: 15.5px;
@@ -360,9 +363,272 @@ max-width: 300px;
       font-family: 'TT Hoves';
       font-size: 21px;
       font-weight: 400;
-      line-height: 29.4px;
+      line-height: 140%;
       
   }
+
+
+
+
+
+
+.tehnikums {
+   display: grid;
+   grid-template-columns: 3fr;
+   
+   gap: 30px;
+   
+}
+  
+  
+.tehnikum {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+  .tehnikum img {
+   width: 110px;
+height: 110px;
+top: calc(74px + (148 - 74) * ((100vw - 376px) / (1280 - 375)));
+left: 121px;
+}
+.tehnikum span {
+  
+font-size: calc(22px + (27 - 22) * ((100vw - 376px) / (1280 - 375)));
+margin-top: calc(20px + (40 - 20) * ((100vw - 376px) / (1280 - 375)));
+font-weight: 600;
+line-height: 122%;
+text-align: left;
+width: calc(328px + (426 - 328) * ((100vw - 376px) / (1280 - 375)));
+height: calc(93px + (114 - 93) * ((100vw - 376px) / (1280 - 375)));
+
+}
+
+.graduate {
+  grid-column: 2/3; 
+  grid-row: 1/2;
+  
+}
+
+.direction {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 150px;
+}
+
+.graduate p, .direction p {
+   font-size: calc(16px + (21 - 16) * ((100vw - 376px) / (1280 - 375)));
+}
+
+.graduate h4, .direction h4 {
+   
+ font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
+ font-weight: 700;
+}
+
+
+@media (max-width: 600px) {
+   .aboutschool {
+      display: grid;
+     grid-template-columns: 1fr;
+   }
+   .graduate {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      
+   }
+   .direction {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      width: 328px;
+     height: 40px;
+   }
+
+}
+
+
+
+
+
+
+   
+
+section.application{
+   background-color: #222;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   color:#fff;
+   padding: calc(24px + (120 - 24) * ((100vw - 375px) / (1280 - 375)));
+  
+   
+}
+   
+   
+.register{
+   width: calc(328px + (475 - 328) * ((100vw - 376px) / (1280 - 375)));
+   margin-top: 100px;
+   
+}
+.regText {
+   margin-top: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375)));
+}
+.register h2{
+   width: calc(328px + (424 - 328) * ((100vw - 376px) / (1280 - 375)));
+   margin: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375))) 0;
+}
+.txt{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin-bottom:calc(20px + (24 - 20) * ((100vw - 376px) / (1280 - 375)));
+}
+.txt img{
+   align-self:center;
+   width:28px;
+   height: 28px;
+   margin-right: 20px;
+}
+.txt p{
+   margin: 0;
+   font-size: calc(18px + (27 - 18) * ((100vw - 376px) / (1280 - 375)));
+   text-transform: uppercase;
+}
+.regText{
+   margin-bottom:calc(44px + (187 - 44) * ((100vw - 376px) / (1280 - 375)));
+
+}
+.registerForm{
+   position: relative;
+  margin-top: calc(80px + (100 - 80) * ((100vw - 376px) / (1280 - 375)));
+  margin-bottom: calc(150px + (80 - 150) * ((100vw - 376px) / (1280 - 375)));
+  
+  
+   width: calc(350px + (475 - 350) * ((100vw - 376px) / (1280 - 375)));
+   height: calc(529px + (600 - 529) * ((100vw - 376px) / (1280 - 375)));
+}
+.Rgform{
+   margin-top: 10px;
+   margin-right: 24px;
+   background-color:#FFFFFF;
+   color:#222222;
+   text-align: center;
+   padding: 60px calc(30px + (69 - 30) * ((100vw - 376px) / (1280 - 375)));
+   border-radius:12px;
+   
+}
+.Rgform form {
+   margin-top: 30px;
+}
+.Rgform input {
+   display: block;
+   width: 100%;
+
+   border: 0;
+   border-bottom: 1px solid #a1a1a1;
+   outline: 0;
+   background: transparent;
+
+   font-size: 18px;
+   line-height: 27px;
+   padding: 10px 0;
+}
+
+ .Rgform form button {
+   margin-top: 30px;
+
+   width: calc(267px + (328 - 267) * ((100vw - 376px) / (1280 - 375)));
+   padding: 20px 0px;
+   border-radius: 12px ;
+
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 117%;
+
+   background: #6E3ABA;
+   color: white;
+   border: 1px solid  #6E3ABA;
+}
+
+.Rgform h4{
+   font-size: calc(26px + (30 - 26) * ((100vw - 376px) / (1280 - 375)));
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 118%;
+}
+.Rgform span{
+   font-size: 21px;
+   line-height: 140%;
+   text-align: center;
+   margin-top: 10px;
+}
+.havequestion{
+   margin-top: 40px;
+   width: calc(271px + (353 - 271) * ((100vw - 376px) / (1280 - 375)));
+   opacity: 50%;
+}
+.havequestion h5 , .havequestion p{
+   font-size: 18px;
+   line-height: 21.2px;
+   margin: 0;
+}
+
+.havequestion h5{
+   margin-bottom: 10px;
+}
+
+.circle {
+  position: relative;
+  width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+  height: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+margin-bottom: -80px;
+margin-left: -70px;
+}
+
+.image-container {
+   position: relative;
+   width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+   height: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+
+}
+
+#skidka {
+   width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+   height: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));  
+}
+
+.discount-text {
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: calc(40px + (63 - 40) * ((100vw - 376px) / (1280 - 375))); 
+   color: white; 
+   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+   .circle {
+      
+    margin-bottom: -70px;
+   
+    margin-left: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -406,7 +672,7 @@ max-width: 300px;
    width: 320px;
 }
 
-.form h4 {
+.form h5 {
    text-transform: uppercase;
    font-size: 26px;
    text-align: center;
@@ -464,3 +730,22 @@ max-width: 300px;
 .thankYouPage h2 {
    margin-bottom: 10px;
 }
+
+
+
+
+section.dokazatelstvo {
+   margin-top: 100px;
+}
+.dokazatelstvo p {
+  
+font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+
+
+}
+
+ /*.swiper img {
+   width: 100%;
+ }*/ 
+

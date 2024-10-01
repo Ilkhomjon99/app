@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./package/swiper-bundle.min.css">
 </head>
 <body>
     <section class="legendContainer">
@@ -135,10 +136,83 @@
     </section>
 
 
+
+
+    <section class="aboutschool">
+        <h3>Немного о нас</h3>
+        <div class="tehnikums">
+
+            <div class="tehnikum">
+                <img src="./img/icon 2.svg">
+                <span>Резиденты IT-парка и одна из самых успешных DIGITAL-школ в Узбекистане</span>
+            </div>
+            <div class="graduate">
+                <h4>> 2500</h4>
+                <p>выпускников</p>
+            </div>
+            <div class="direction">
+                <h4>10 направлений </h4>
+                <p>обучения в сфере Digital</p>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <section class="application">
+        <div class="register">
+            <h2>запишись на курс прямо сейчас!</h2>
+            <div class="regText">
+                <div class="txt">
+                    <img src="./img/icon_python.svg" alt="keyboard">
+                    <p>html, css, js</p>
+                </div>
+                <div class="txt">
+                    <img src="./img/icon_game_bot.svg" alt="gamebot">
+                    <p>Разработка онлайн игр</p>
+                </div>
+                <div class="txt">
+                    <img src="./img/butstrap.svg" alt="database">
+                    <p>Введение в Bootstrap и Github</p>
+                </div>
+            </div>    
+        </div>
+        <div class="registerForm">
+            <div class="circle">
+                <div class="image-container">
+                    <img src="./img/Ellipse_bg.png" alt="" id="skidka">
+                    <p class="discount-text">10%</p>
+                </div>
+            </div>
+            
+            <div class="Rgform">
+                <h4>оставь заявку</h4>
+                <span>начало обучения: 1 декабря</span>
+                <form>
+                    <input type="text" name="username" placeholder="Имя">
+                    <input type="text" name="userSname" placeholder="Фамилия">
+                    <input type="tel" name="userphone" placeholder="Телефон">
+                    <button class="purple Reg">Записаться на курс</button>
+                </form>
+                
+                <div class="havequestion">
+                    <h5>остались вопросы?</h5>
+                    <p>звони: +998 33 135 33 55</p>
+                    <p>наши консультанты доступны каждый день 
+                        с 10:00 до 22:00.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
     <div class="wrapper">
         <div class="popUp">
             <div class="form">
-                <h4>оставь заявку</h4>
+                <h5>оставь заявку</h5>
                 <form action="">
                     <input type="text" name="username" placeholder="Имя">
                     <input type="text" name="userphone" placeholder="Телефон">
@@ -154,8 +228,67 @@
         </div>
     </div> 
 
+    <section class="dokazatelstvo">
+        <h3>Все еще сомневаешься? </h3>
+        <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/Rectangle 76.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/JM_photo_153.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src=".//img/JM_photo_153 (2).png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/JM_photo_153 (1).png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/JM_photo_101 1.png" alt="">
+          </div>
+          
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
 
 
 <script src="./script.js"></script>
+<script src="./package/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay:{
+        delay:5000,
+    },
+    breakpoints:{
+        320: {
+            slidesPerView:1,
+            spacebetween:10
+        },
+    },
+      
+    850: {
+        slidesPerView:3,
+        spacebetween:25
+    },
+
+
+
+    // And if we need scrollbar
+    pagination: {
+        el: '.swiper-scrollbar',
+    },
+    });
+</script>
 </body>
 </html>
